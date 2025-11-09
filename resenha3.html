@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R3 - Resenha</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background:
+        linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255)),center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      font-size: 3rem;
+      color: rgb(255, 102, 0);
+      margin: 30px 0;
+      text-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .resenha {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .resenha img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+    }
+
+    .resenha p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .btn-voltar {
+    background-color: rgb(40, 41, 83);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    width: 130px;
+    height: 45px;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-voltar:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Resenha</h1>
+  </header>
+
+  <main>
+    <h2>Interestelar (2014)</h2>
+
+    <section class="resenha">
+      <img src="imgs/InterestelarPoster.png" alt="Poster do filme Interestelar">
+
+      <p>
+        <em>Interestelar</em> é um filme de ficção científica que dividiu opiniões, mas também marcou uma geração.
+        <br><br>
+        O longa é uma rara experiência cinematográfica que levanta questões complexas e pouco abordadas na ficção científica moderna.
+        O diretor aproveitou muito bem o silêncio e o vácuo do espaço em diversas cenas, criando uma atmosfera de imersão total.
+        <br><br>
+        A fotografia é cuidadosamente planejada para traduzir o significado de cada ambiente, e os efeitos especiais são impressionantes,
+        trazendo um realismo notável
+        <br><br>
+        <strong>AVALIAÇÃO FINAL:</strong> 9,5 / 10
+      </p>
+    </section>
+      <a href="site.html">
+        <button class="btn-voltar">Voltar</button>
+      </a>
+  </main>
+</body>
+
+</html>

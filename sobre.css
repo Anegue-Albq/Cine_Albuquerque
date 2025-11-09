@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, black, rgb(62, 62, 106));
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(16, 13, 13, 0.474);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.perfil {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(19, 21, 84);
+  color: rgb(239, 226, 34);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header.perfil img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid rgb(239, 226, 34);
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sections section {
+  flex: 1 1 45%;
+  background-color: rgb(58, 59, 87);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.sections ul,.sections ol {
+  margin-left: 20px;
+}
+
+p {
+  text-align: justify;
+}
+a {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.btn-voltar {
+    background-color: rgb(40, 40, 83);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    width: 130px;
+    height: 45px;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-voltar:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}

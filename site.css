@@ -1,0 +1,108 @@
+body{
+    background: linear-gradient(to top,black,rgb(21, 21, 58),rgb(40, 40, 83));
+}
+table{
+    border-color:  rgb(42, 42, 42);
+    background: linear-gradient(to top,black,rgb(21, 21, 58),rgb(40, 40, 83));
+    color: aliceblue;
+    border-color:  rgb(42, 42, 42);
+
+}
+#Titulo{
+    margin-top: -15px;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    transition: 0.4s;
+}
+td{
+    width: 10%;
+}
+img:hover{
+    transform: scale(0.9);
+}
+#A:hover{
+    color: rgb(152, 152, 152);
+    
+}
+footer{
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    bottom: -1;
+    background-color: black;
+    font-size: larger;
+}
+div{
+    justify-content: right;
+    display: flex;
+
+}
+div:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(67, 67, 67);
+    border: solid black 3px;
+    text-align: center;
+    width: 5%;
+    color: white;
+    font-weight: bold;
+}
+.box:hover{
+    background-color: rgb(0, 0, 0);
+    border: solid white 3px;
+    text-align: center;
+    width: 5%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+
+
+}
+.brilho {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ffff00; /* amarelo vibrante */
+    text-shadow: 
+        0 0 5px #ffff00, 
+        0 0 10px #ffd700, 
+        0 0 20px #ffffff;
+    animation: brilhoAnimado 2s infinite alternate;
+}
+
+@keyframes brilhoAnimado {
+    0% {
+        text-shadow: 
+            0 0 5px #ffff00, 
+            0 0 10px #ffd700, 
+            0 0 20px #ffffff;
+        color: #ffff00;
+    }
+    50% {
+        text-shadow: 
+            0 0 15px #ffd700, 
+            0 0 25px #ffff00, 
+            0 0 45px #ffffff;
+        color: #fffacd; 
+    }
+    100% {
+        text-shadow: 
+            0 0 20px #ffffff, 
+            0 0 35px #ffff00, 
+            0 0 60px #ffd700;
+        color: #ffff00;
+    }
+}

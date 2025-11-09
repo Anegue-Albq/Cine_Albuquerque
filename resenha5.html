@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R5 - Resenha</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background:
+        linear-gradient(rgb(0, 0, 0), rgb(13, 33, 0)), center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      font-size: 3rem;
+      color: rgba(0, 0, 0, 0.753);
+      margin: 30px 0;
+      text-shadow: 0 0 20px rgba(162, 9, 9, 0.7);
+    }
+
+    main h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .resenha {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .resenha img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(166, 2, 2, 0.6);
+    }
+
+    .resenha p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .btn-voltar {
+      background-color: rgb(40, 41, 83);
+      color: aliceblue;
+      border: 2px solid aliceblue;
+      border-radius: 10px;
+      width: 130px;
+      height: 45px;
+      font-size: large;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-voltar:hover {
+      background-color: black;
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Resenha</h1>
+  </header>
+
+  <main>
+    <h2>Jurassic Park (1993)</h2>
+
+    <section class="resenha">
+      <img src="imgs/JurassicParkPoster.png" alt="Poster do filme Jurassic Park">
+
+      <p>
+        <em>Jurassic Park</em> é um clássico do cinema dirigido por Steven Spielberg e baseado no livro de Michael
+        Crichton.
+        <br><br>
+        Lançado em 1993, o filme revolucionou os efeitos visuais ao trazer dinossauros incrivelmente realistas para as
+        telonas. A trama gira em torno de um parque temático onde cientistas clonaram dinossauros a partir de DNA
+        preservado em âmbar.
+        <br><br>
+        Tudo sai do controle quando o sistema de segurança falha, colocando os visitantes em uma luta desesperada pela
+        sobrevivência.
+        <br><br>
+        O longa é um marco do cinema de aventura e suspense, combinando ação, ciência e momentos de puro terror —
+        especialmente com os velociraptors, que se tornaram alguns dos vilões mais icônicos do cinema.
+        <br><br>
+        A trilha sonora de <strong>John Williams</strong> complementa perfeitamente a atmosfera épica e emocionante da
+        produção.
+        <br><br>
+        <strong>AVALIAÇÃO FINAL:</strong> 9 / 10
+      </p>
+    </section>
+    <a href="site.html">
+      <button class="btn-voltar">Voltar</button>
+    </a>
+  </main>
+</body>
+
+</html>
