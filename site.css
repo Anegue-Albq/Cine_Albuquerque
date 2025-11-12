@@ -1,13 +1,15 @@
-body{
-    background: linear-gradient(to top,black,rgb(21, 21, 58),rgb(40, 40, 83));
+body {
+    background: radial-gradient(circle at center, rgb(40, 40, 83), rgb(21, 21, 58), black);
 }
-table{
-    border-color:  rgb(42, 42, 42);
-    background: linear-gradient(to top,black,rgb(21, 21, 58),rgb(40, 40, 83));
-    color: aliceblue;
-    border-color:  rgb(42, 42, 42);
 
+table {
+    background: radial-gradient(circle at center, rgb(40, 40, 83), rgb(21, 21, 58), black);
+    color: aliceblue;
+    border-color: rgb(42, 42, 42);
+    border-collapse: collapse;
+    padding: 10px;
 }
+
 #Titulo{
     margin-top: -15px;
 }
@@ -17,6 +19,7 @@ a{
 
 img{
     transition: 0.4s;
+    border-radius: 20px;
 }
 td{
     width: 10%;
@@ -28,16 +31,17 @@ img:hover{
     color: rgb(152, 152, 152);
     
 }
-footer{
+footer {
     color: white;
     text-align: center;
     width: 100%;
-    position: relative;
+    bottom: 0;
+    left: 0;
     padding: 10px;
-    bottom: -1;
-    background-color: black;
+    background: radial-gradient(circle at center, rgb(21, 21, 58), black);
     font-size: larger;
 }
+
 div{
     justify-content: right;
     display: flex;
