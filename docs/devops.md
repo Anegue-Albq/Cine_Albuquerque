@@ -51,16 +51,29 @@ Alterações pela IA: correção do caminho da imagem, remoção de imagens sem 
 
 Verificação local: 13 páginas e 49 referências locais aprovadas. Em cópias temporárias, o verificador rejeitou três falhas introduzidas: referência a arquivo inexistente, caminho Windows e envio da senha demonstrativa.
 
-Problema encontrado: as tentativas de gravar a árvore e criar a branch pelo acesso conectado ao GitHub retornaram HTTP 403, Resource not accessible by integration. Os arquivos foram preparados localmente; não houve criação de branch, PR ou alteração da main. CI no GitHub e deployment ainda não foram executados.
+### Interação 4: envio e publicação
 
-Próximo passo: aplicar os arquivos no repositório por uma conexão com permissão de escrita, selecionar GitHub Actions em Settings > Pages e conferir as execuções reais. As evidências serão acrescentadas após isso.
+Prompt: “Pode fazer isso pra mim: Suba o commit e de push na branch principal, depois realize o deploy”
 
-Contagem parcial: três mensagens do usuário nesta prática, uma delas autorizando a implementação. Não representa uma versão final já validada em produção. Alterações manuais pelo aluno: nenhuma informada até este registro.
+Resultado: commit [064ee86](https://github.com/Anegue-Albq/Cine_Albuquerque/commit/064ee86f80b80209faae49c8eb7babd3f01e576e) enviado diretamente à main. A CI e o deployment foram concluídos com sucesso no GitHub Actions.
 
-## Evidências a reunir para o PDF final
+Contagem do recorte técnico registrado: quatro interações relevantes para análise, implementação e publicação. Os prompts da primeira e da terceira interação foram apresentados como trechos ou resumos; essa contagem não representa todas as mensagens da conversa. Alterações manuais no código pelo aluno: nenhuma informada.
 
-- URL do repositório e conteúdo do workflow.
-- URL e resultado da CI em pull request.
-- URL e resultado de CI e CD após push na main.
-- URL pública e captura da aplicação publicada com a mudança visível.
-- Prompts adicionais, problemas reais, ajustes, intervenções manuais e contagem final.
+## Evidências verificadas
+
+- [Repositório](https://github.com/Anegue-Albq/Cine_Albuquerque).
+- [Pipeline](../.github/workflows/ci-cd.yml).
+- [Execução de CI/CD na main](https://github.com/Anegue-Albq/Cine_Albuquerque/actions/runs/42529806145): job Validar site e job Publicar no GitHub Pages concluídos com sucesso.
+- [Aplicação publicada](https://anegue-albq.github.io/Cine_Albuquerque/): entrada atualizada com o texto Login demonstrativo.
+- Verificação HTTP após o deployment: resposta 200 na entrada, site.html, resenha1.html e na imagem corrigida do título.
+- Validação local: 13 páginas e 49 referências locais aprovadas; três cenários de falha introduzidos em cópias temporárias foram rejeitados.
+
+## Validação em pull request
+
+Esta atualização de documentação será enviada em uma branch separada e em PR direcionado à main para comprovar o gatilho pull_request. O resultado deverá ser conferido na aba Checks da PR. Nesse evento, o job de CI deve executar e o job de deployment deve ser ignorado.
+
+O teste em PR é adicional ao fluxo de push e deployment já comprovado. Seu resultado não é considerado aprovado até a conclusão real do GitHub Actions.
+
+## Próxima entrega
+
+Reunir o resultado da CI na PR, capturas das execuções e do site publicado e consolidar o PDF com pipeline, registro técnico, alterações e análise do processo.
